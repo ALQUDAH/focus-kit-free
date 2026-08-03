@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حقيبة التركيز واللعب | أنشطة قابلة للطباعة للأطفال 2-7 سنوات</title>
+<meta name="description" content="حمّل 4 أنشطة مجانية قابلة للطباعة تدعم تركيز وانتباه طفلك. مناسبة من عمر سنتين إلى 7 سنوات.">
+<style>
+:root{--navy:#2B4B7E;--deep:#1E3A5F;--coral:#E8604C;--yellow:#F2B233;--sky:#CDE4F5;--skylight:#EAF4FB;--green:#5FA86B;--cream:#FDF6E8;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Cairo','Segoe UI',Tahoma,sans-serif;color:var(--deep);background:linear-gradient(180deg,#BEDCF0,#EAF4FB 60%,#fff);min-height:100vh;}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Cairo:wght@600;700;800&display=swap');
+.wrap{max-width:520px;margin:0 auto;padding:32px 20px 60px;text-align:center;}
+.logo{font-weight:800;color:var(--coral);font-size:20px;margin-bottom:28px;}
+h1{font-size:34px;font-weight:800;color:var(--navy);line-height:1.35;}
+h1 b{color:var(--coral);}
+.sub{font-size:18px;font-weight:700;color:#4a6685;margin:14px 0 6px;line-height:1.7;}
+.badge{display:inline-block;background:var(--cream);border:2px dashed var(--green);border-radius:40px;padding:8px 22px;font-weight:800;color:var(--navy);margin:14px 0;}
+.badge b{color:var(--coral);}
+.card{background:#fff;border-radius:22px;box-shadow:0 10px 40px rgba(43,75,126,.15);padding:26px 22px;margin-top:22px;}
+.card h2{color:var(--navy);font-size:21px;margin-bottom:4px;}
+.card p{color:#5b6f8a;font-weight:600;font-size:15px;margin-bottom:16px;}
+input{width:100%;padding:14px 16px;border:2px solid var(--sky);border-radius:14px;font-size:16px;font-family:inherit;font-weight:700;color:var(--deep);margin-bottom:12px;outline:none;text-align:right;}
+input:focus{border-color:var(--yellow);}
+button{width:100%;padding:15px;border:0;border-radius:14px;background:var(--coral);color:#fff;font-size:18px;font-weight:800;font-family:inherit;cursor:pointer;transition:transform .1s;}
+button:hover{transform:scale(1.02);}
+button:disabled{background:#c9d6e4;cursor:wait;}
+.ok{display:none;background:var(--skylight);border-radius:14px;padding:18px;font-weight:800;color:var(--green);font-size:17px;line-height:1.7;}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px;text-align:right;}
+.feat{background:#fff;border-radius:14px;padding:12px 14px;font-weight:700;font-size:14px;color:var(--navy);box-shadow:0 4px 16px rgba(43,75,126,.08);}
+.feat span{font-size:20px;margin-left:6px;}
+.disc{margin-top:30px;font-size:12.5px;color:#8aa0b8;font-weight:600;line-height:1.8;}
+.err{display:none;color:var(--coral);font-weight:700;font-size:14px;margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">★ حقيبة التركيز واللعب</div>
+  <h1>طفلك يتشتت بسرعة؟<br>حوّل التركيز إلى <b>لعبة يحبها</b></h1>
+  <p class="sub">أوراق عمل قابلة للطباعة تدعم الانتباه والهدوء والتحكم بالحركة، مصممة خصيصاً للأطفال</p>
+  <div class="badge">من عمر <b>سنتين إلى 7 سنوات</b></div>
+
+  <div class="card">
+    <h2>🎁 حمّل 4 أنشطة مجانية الآن</h2>
+    <p>أدخل بريدك وستصلك الحزمة المجانية فوراً</p>
+    <form id="leadForm">
+      <input type="text" id="name" placeholder="اسمك" required>
+      <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+      <button type="submit" id="btn">أرسلوا لي الأنشطة المجانية</button>
+      <div class="err" id="err">حدث خطأ، حاول مرة أخرى من فضلك</div>
+    </form>
+    <div class="ok" id="ok">✅ تم! افتح بريدك الآن،<br>الأنشطة المجانية في طريقها إليك</div>
+  </div>
+
+  <div class="feats">
+    <div class="feat"><span>🧩</span>متاهات وألغاز تركيز</div>
+    <div class="feat"><span>✏️</span>تتبّع خطوط وتلوين</div>
+    <div class="feat"><span>🏃</span>بطاقات حركة وهدوء</div>
+    <div class="feat"><span>⭐</span>جداول روتين ومكافآت</div>
+  </div>
+
+  <div class="disc">
+    هذه الأنشطة داعمة وممتعة لتدريب الانتباه، وهي ليست تشخيصاً ولا علاجاً لأي حالة.
+    إذا كانت لديك مخاوف حول تركيز طفلك، ننصح باستشارة طبيب الأطفال أو أخصائي مختص.
+  </div>
+</div>
+<script>
+const WEBHOOK_URL = 'https://n8n.qclabz.com/webhook/focus-kit-lead'; // TODO: create this webhook in n8n
+document.getElementById('leadForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('btn');
+  btn.disabled = true; btn.textContent = 'لحظة من فضلك...';
+  document.getElementById('err').style.display = 'none';
+  try {
+    const res = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        source: 'landing',
+        ts: new Date().toISOString()
+      })
+    });
+    if (!res.ok) throw new Error('bad status');
+    document.getElementById('leadForm').style.display = 'none';
+    document.getElementById('ok').style.display = 'block';
+  } catch (err) {
+    document.getElementById('err').style.display = 'block';
+    btn.disabled = false; btn.textContent = 'أرسلوا لي الأنشطة المجانية';
+  }
+});
+</script>
+</body>
+</html>
