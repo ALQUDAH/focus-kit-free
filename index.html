@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>حقيبة التركيز واللعب | أنشطة قابلة للطباعة للأطفال 2-7 سنوات</title>
 <meta name="description" content="حمّل 4 أنشطة مجانية قابلة للطباعة تدعم تركيز وانتباه طفلك. مناسبة من عمر سنتين إلى 7 سنوات.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="4 أنشطة تركيز مجانية لطفلك — حقيبة التركيز واللعب">
+<meta property="og:description" content="أوراق عمل قابلة للطباعة تدرب تركيز وانتباه الأطفال 2-7 باللعب. حمّل الهدية المجانية الآن، وكل حقيبة كاملة تصل مخصصة باسم طفلك.">
+<meta property="og:image" content="https://bondoq.qclabz.com/img/mockup-level-a.jpg">
+<meta property="og:url" content="https://bondoq.qclabz.com/">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{--navy:#2B4B7E;--deep:#1E3A5F;--coral:#E8604C;--yellow:#F2B233;--sky:#CDE4F5;--skylight:#EAF4FB;--green:#5FA86B;--cream:#FDF6E8;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -61,6 +67,12 @@ button:disabled{background:#c9d6e4;cursor:wait;}
     <div class="feat"><span>⭐</span>جداول روتين ومكافآت</div>
   </div>
 
+  <div style="margin-top:26px;background:#fff;border-radius:20px;box-shadow:0 8px 30px rgba(43,75,126,.12);padding:18px">
+    <div style="font-weight:800;color:var(--navy);font-size:17px;margin-bottom:10px">📸 لمحة من داخل الحقائب</div>
+    <img src="img/mockup-level-a.jpg" alt="صفحات حقيقية من حقيبة التركيز واللعب" style="width:100%;border-radius:14px">
+    <div style="font-weight:700;color:#5b6f8a;font-size:13.5px;margin-top:10px;line-height:1.8">صفحات حقيقية من حقيبة المستوى الأول — وكل حقيبة كاملة تصل <b style="color:var(--coral)">مخصصة باسم طفلك</b> في الصفحات وشهادة الإنجاز</div>
+  </div>
+
   <div class="disc">
     هذه الأنشطة داعمة وممتعة لتدريب الانتباه، وهي ليست تشخيصاً ولا علاجاً لأي حالة.
     إذا كانت لديك مخاوف حول تركيز طفلك، ننصح باستشارة طبيب الأطفال أو أخصائي مختص.
@@ -80,7 +92,7 @@ document.getElementById('leadForm').addEventListener('submit', async (e) => {
       body: JSON.stringify({
         name: document.getElementById('name').value.trim(),
         email: document.getElementById('email').value.trim(),
-        source: 'landing',
+        source: (() => { const q = new URLSearchParams(location.search); return ['landing', q.get('utm_source'), q.get('utm_campaign')].filter(Boolean).join('/'); })(),
         ts: new Date().toISOString()
       })
     });
