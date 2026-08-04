@@ -17,26 +17,32 @@
 body{font-family:'Cairo','Segoe UI',Tahoma,sans-serif;color:var(--deep);background:linear-gradient(180deg,#BEDCF0,#EAF4FB 60%,#fff);min-height:100vh;}
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Cairo:wght@600;700;800&display=swap');
 .wrap{max-width:520px;margin:0 auto;padding:32px 20px 60px;text-align:center;}
-.logo{font-weight:800;color:var(--coral);font-size:20px;margin-bottom:28px;}
-h1{font-size:34px;font-weight:800;color:var(--navy);line-height:1.35;}
+.logo{font-weight:800;color:var(--coral);font-size:20px;margin-bottom:22px;}
+h1{font-size:32px;font-weight:800;color:var(--navy);line-height:1.35;}
 h1 b{color:var(--coral);}
-.sub{font-size:18px;font-weight:700;color:#4a6685;margin:14px 0 6px;line-height:1.7;}
-.badge{display:inline-block;background:var(--cream);border:2px dashed var(--green);border-radius:40px;padding:8px 22px;font-weight:800;color:var(--navy);margin:14px 0;}
+.sub{font-size:17px;font-weight:700;color:#4a6685;margin:12px 0 6px;line-height:1.7;}
+.badge{display:inline-block;background:var(--cream);border:2px dashed var(--green);border-radius:40px;padding:8px 22px;font-weight:800;color:var(--navy);margin:12px 0;}
 .badge b{color:var(--coral);}
-.card{background:#fff;border-radius:22px;box-shadow:0 10px 40px rgba(43,75,126,.15);padding:26px 22px;margin-top:22px;}
-.card h2{color:var(--navy);font-size:21px;margin-bottom:4px;}
-.card p{color:#5b6f8a;font-weight:600;font-size:15px;margin-bottom:16px;}
+.card{background:#fff;border-radius:22px;box-shadow:0 10px 40px rgba(43,75,126,.15);padding:24px 22px;margin-top:18px;}
+.card h2{color:var(--navy);font-size:20px;margin-bottom:4px;}
+.card p{color:#5b6f8a;font-weight:600;font-size:14.5px;margin-bottom:14px;}
 input{width:100%;padding:14px 16px;border:2px solid var(--sky);border-radius:14px;font-size:16px;font-family:inherit;font-weight:700;color:var(--deep);margin-bottom:12px;outline:none;text-align:right;}
 input:focus{border-color:var(--yellow);}
-button{width:100%;padding:15px;border:0;border-radius:14px;background:var(--coral);color:#fff;font-size:18px;font-weight:800;font-family:inherit;cursor:pointer;transition:transform .1s;}
+button{width:100%;padding:15px;border:0;border-radius:14px;background:var(--coral);color:#fff;font-size:17px;font-weight:800;font-family:inherit;cursor:pointer;transition:transform .1s;}
 button:hover{transform:scale(1.02);}
 button:disabled{background:#c9d6e4;cursor:wait;}
-.ok{display:none;background:var(--skylight);border-radius:14px;padding:18px;font-weight:800;color:var(--green);font-size:17px;line-height:1.7;}
-.feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px;text-align:right;}
+.err{display:none;color:var(--coral);font-weight:700;font-size:14px;margin-top:8px;}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;text-align:right;}
 .feat{background:#fff;border-radius:14px;padding:12px 14px;font-weight:700;font-size:14px;color:var(--navy);box-shadow:0 4px 16px rgba(43,75,126,.08);}
 .feat span{font-size:20px;margin-left:6px;}
-.disc{margin-top:30px;font-size:12.5px;color:#8aa0b8;font-weight:600;line-height:1.8;}
-.err{display:none;color:var(--coral);font-weight:700;font-size:14px;margin-top:8px;}
+.disc{margin-top:26px;font-size:12.5px;color:#8aa0b8;font-weight:600;line-height:1.8;}
+.offerbox{margin-top:14px;background:linear-gradient(135deg,#FFF4D6,#FFE0A0);border:2px solid var(--yellow);border-radius:16px;padding:14px 16px;font-weight:800;color:#7A5A00;font-size:14px;line-height:1.7;}
+.offerbox b{color:#B71C1C;}
+.pricestack{display:inline-flex;align-items:baseline;gap:8px;margin-top:6px;}
+.pricestack s{color:#9ab0c6;font-size:15px;font-weight:700;}
+.pricestack .now{color:var(--coral);font-size:24px;font-weight:800;}
+.hero{margin-top:14px;background:#fff;border-radius:16px;padding:14px;box-shadow:0 4px 20px rgba(43,75,126,.1);}
+.hero img{width:100%;border-radius:12px;display:block;}
 </style>
 </head>
 <body>
@@ -46,8 +52,9 @@ button:disabled{background:#c9d6e4;cursor:wait;}
   <p class="sub">أوراق عمل قابلة للطباعة تدعم الانتباه والهدوء والتحكم بالحركة، مصممة خصيصاً للأطفال</p>
   <div class="badge">من عمر <b>سنتين إلى 7 سنوات</b></div>
 
-  <div style="margin-top:14px;background:linear-gradient(135deg,#FFF4D6,#FFE7B8);border:2px solid var(--yellow);border-radius:16px;padding:12px 16px;font-weight:800;color:#7A5A00;font-size:14.5px;line-height:1.7">
-    🌟 <b>عرض الإطلاق:</b> كل مسجّل يستلم كوداً حصرياً بخصم 20% ساري <b>لأول 72 ساعة فقط</b> من التسجيل — سعر الحقيبة $6.40 بدل $8.
+  <div class="hero">
+    <img src="img/mockup-level-a.jpg" alt="صفحات حقيقية من حقيبة التركيز واللعب">
+    <div style="font-weight:700;color:#5b6f8a;font-size:13.5px;margin-top:10px;line-height:1.8">صفحات حقيقية — كل حقيبة تصل <b style="color:var(--coral)">باسم طفلك</b> في الصفحات وشهادة الإنجاز</div>
   </div>
 
   <div class="card">
@@ -59,10 +66,12 @@ button:disabled{background:#c9d6e4;cursor:wait;}
       <button type="submit" id="btn">أرسلوا لي الأنشطة المجانية</button>
       <div class="err" id="err">حدث خطأ، حاول مرة أخرى من فضلك</div>
     </form>
-    <div class="ok" id="ok">✅ تم! افتح بريدك الآن،<br>الأنشطة المجانية في طريقها إليك<br><span style="display:block;margin-top:10px;padding:10px;background:#FFF4D6;border-radius:10px;color:#7A5A00;font-size:14px">🎁 <b>كودك الحصري بخصم 20%</b> سيصلك خلال 3 أيام — ساري 72 ساعة فقط</span><a href="kits.html" style="color:var(--coral);font-size:15px;display:inline-block;margin-top:10px">وفي الأثناء: تصفح كل الحقائب باسم طفلك ←</a></div>
+    <div class="offerbox">
+      🌟 <b>عرض ترحيبك متاح فوراً</b> بعد التسجيل:<br>
+      <span class="pricestack"><s>$10</s> <s>$8</s> <span class="now">$6.40</span></span><br>
+      لأي حقيبة مخصصة باسم طفلك — بكود FOCUS20 ساري <b>72 ساعة فقط</b> من لحظة تسجيلك
+    </div>
   </div>
-
-  <a href="kits.html" style="display:inline-block;margin-top:18px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;font-size:16px;padding:13px 26px;border-radius:12px">🧺 تصفح كل الحقائب (تصل باسم طفلك)</a>
 
   <div class="feats">
     <div class="feat"><span>🧩</span>متاهات وألغاز تركيز</div>
@@ -71,38 +80,31 @@ button:disabled{background:#c9d6e4;cursor:wait;}
     <div class="feat"><span>⭐</span>جداول روتين ومكافآت</div>
   </div>
 
-  <div style="margin-top:26px;background:#fff;border-radius:20px;box-shadow:0 8px 30px rgba(43,75,126,.12);padding:18px">
-    <div style="font-weight:800;color:var(--navy);font-size:17px;margin-bottom:10px">📸 لمحة من داخل الحقائب</div>
-    <img src="img/mockup-level-a.jpg" alt="صفحات حقيقية من حقيبة التركيز واللعب" style="width:100%;border-radius:14px">
-    <div style="font-weight:700;color:#5b6f8a;font-size:13.5px;margin-top:10px;line-height:1.8">صفحات حقيقية من حقيبة المستوى الأول — وكل حقيبة كاملة تصل <b style="color:var(--coral)">مخصصة باسم طفلك</b> في الصفحات وشهادة الإنجاز</div>
-  </div>
-
   <div class="disc">
     هذه الأنشطة داعمة وممتعة لتدريب الانتباه، وهي ليست تشخيصاً ولا علاجاً لأي حالة.
     إذا كانت لديك مخاوف حول تركيز طفلك، ننصح باستشارة طبيب الأطفال أو أخصائي مختص.
   </div>
 </div>
 <script>
-const WEBHOOK_URL = 'https://n8n.qclabz.com/webhook/focus-kit-lead'; // TODO: create this webhook in n8n
+const WEBHOOK_URL = 'https://n8n.qclabz.com/webhook/focus-kit-lead';
 document.getElementById('leadForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = document.getElementById('btn');
   btn.disabled = true; btn.textContent = 'لحظة من فضلك...';
   document.getElementById('err').style.display = 'none';
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const ts = Math.floor(Date.now() / 1000);
+  const q = new URLSearchParams(location.search);
+  const utm = ['landing', q.get('utm_source'), q.get('utm_campaign')].filter(Boolean).join('/');
   try {
     const res = await fetch(WEBHOOK_URL, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        source: (() => { const q = new URLSearchParams(location.search); return ['landing', q.get('utm_source'), q.get('utm_campaign')].filter(Boolean).join('/'); })(),
-        ts: new Date().toISOString()
-      })
+      body: JSON.stringify({ name, email, source: utm, signup_ts: ts, ts: new Date().toISOString() })
     });
     if (!res.ok) throw new Error('bad status');
-    document.getElementById('leadForm').style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
+    location.href = 'thanks.html?t=' + ts + '&n=' + encodeURIComponent(name);
   } catch (err) {
     document.getElementById('err').style.display = 'block';
     btn.disabled = false; btn.textContent = 'أرسلوا لي الأنشطة المجانية';

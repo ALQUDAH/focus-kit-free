@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تم — أنشطتك في طريقها | حقيبة التركيز واللعب</title>
+<meta name="description" content="أنشطتك المجانية وصلت. عرض ترحيبي محدود لمرة واحدة.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--navy:#2B4B7E;--deep:#1E3A5F;--coral:#E8604C;--yellow:#F2B233;--sky:#CDE4F5;--skylight:#EAF4FB;--green:#5FA86B;--cream:#FDF6E8;--danger:#B71C1C;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Cairo','Segoe UI',Tahoma,sans-serif;color:var(--deep);background:linear-gradient(180deg,#BEDCF0,#EAF4FB 55%,#fff);min-height:100vh;}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&display=swap');
+.wrap{max-width:640px;margin:0 auto;padding:24px 18px 60px;text-align:center;}
+.logo{font-weight:800;color:var(--coral);font-size:19px;margin-bottom:12px;}
+.ok{background:#DCF3E1;border:2px solid var(--green);color:#245A2E;border-radius:14px;padding:14px 18px;font-weight:700;font-size:15px;line-height:1.8;margin-bottom:24px;}
+.ok b{color:var(--green);}
+h1{font-size:26px;font-weight:800;color:var(--navy);line-height:1.4;margin-bottom:10px;}
+h1 b{color:var(--coral);}
+.hero{position:relative;background:linear-gradient(135deg,#fff,var(--cream));border:3px solid var(--yellow);border-radius:22px;padding:24px 22px;box-shadow:0 12px 40px rgba(43,75,126,.18);}
+.ribbon{display:inline-block;background:var(--danger);color:#fff;font-weight:800;font-size:13px;padding:6px 18px;border-radius:20px;margin-bottom:10px;letter-spacing:.3px;}
+.countdown{background:#1E3A5F;color:#fff;border-radius:14px;padding:14px;margin:14px 0;font-weight:800;}
+.countdown small{display:block;font-size:12px;font-weight:700;color:#c9d6e4;margin-bottom:4px;letter-spacing:.3px;}
+.timer{font-size:36px;font-family:'Courier New',monospace;letter-spacing:3px;color:var(--yellow);}
+.bundleimg{width:80%;max-width:340px;margin:14px auto 8px;border-radius:14px;display:block;box-shadow:0 8px 24px rgba(43,75,126,.2);}
+.pricestack{margin:10px 0 4px;font-weight:800;}
+.pricestack s{color:#9ab0c6;font-size:16px;margin-left:8px;}
+.pricestack s.mid{font-size:18px;}
+.pricestack .now{color:var(--coral);font-size:42px;}
+.save{background:var(--green);color:#fff;display:inline-block;padding:6px 18px;border-radius:20px;font-weight:800;font-size:14px;margin-top:4px;}
+.buy{background:var(--coral);color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:16px 40px;border-radius:14px;display:inline-block;margin-top:16px;box-shadow:0 6px 20px rgba(232,96,76,.4);transition:transform .1s;}
+.buy:hover{transform:scale(1.03);}
+.list{text-align:right;background:#fff;border-radius:14px;padding:16px 20px;margin-top:14px;font-size:14.5px;line-height:2;color:var(--deep);font-weight:700;}
+.list b{color:var(--navy);}
+.skip{margin-top:22px;color:#8aa0b8;font-weight:700;font-size:14px;}
+.skip a{color:var(--navy);text-decoration:underline;}
+.expired{background:#F0F3F7;border-color:#9ab0c6;color:#5b6f8a;}
+.expired .ribbon{background:#5b6f8a;}
+.expired .timer{color:#9ab0c6;}
+.expired .buy{background:#5b6f8a;pointer-events:none;}
+.hero.pulse{animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 12px 40px rgba(232,96,76,.25);}50%{box-shadow:0 12px 40px rgba(232,96,76,.5);}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">★ حقيبة التركيز واللعب</div>
+  <div class="ok">✅ <b>تم!</b> أنشطتك المجانية في طريقها إلى بريدك — افحص صندوق الوارد خلال دقيقتين.</div>
+
+  <div class="hero pulse" id="hero">
+    <span class="ribbon" id="ribbon">🔥 لمرة واحدة فقط — عرض ترحيبك</span>
+    <h1><span id="name">مرحباً بك</span>،<br>قبل ما تروح — <b>أفضل صفقة</b> ستراها من بندق:</h1>
+
+    <div class="countdown">
+      <small>ينتهي هذا العرض بالضبط بعد</small>
+      <div class="timer" id="timer">15:00</div>
+    </div>
+
+    <img class="bundleimg" src="img/mockup-bundle.jpg" alt="الحزمة الكاملة">
+
+    <div style="font-weight:800;color:var(--navy);font-size:20px;margin-top:6px">📦 الحزمة الكاملة — 6 حقائب</div>
+    <div style="color:#5b6f8a;font-weight:700;font-size:14px;margin-top:4px">+190 صفحة أنشطة • عربي وإنجليزي • أعمار 2-7 • <b style="color:var(--coral)">كلها باسم طفلك</b></div>
+
+    <div class="pricestack">
+      <s>$60</s>
+      <s class="mid">$48</s>
+      <span class="now">$24</span>
+    </div>
+    <div class="save">💰 توفير $36 (60%)</div>
+
+    <a class="buy" id="buyBtn" href="https://qclabz.gumroad.com/l/focus-kit-bundle">اطلب الحزمة الآن</a>
+
+    <div class="list">
+      <b>✨ ما يوفّره لك هذا العرض:</b><br>
+      • قيمة الحقائب منفصلة: <s>$60</s><br>
+      • السعر العادي كحزمة: <s>$48</s><br>
+      • <b>سعرك الآن (لأول 15 دقيقة):</b> <b style="color:var(--coral)">$24</b><br>
+      • كل حقيبة مخصصة باسم طفلك تلقائياً<br>
+      • تصل PDF على بريدك خلال دقائق
+    </div>
+  </div>
+
+  <div class="skip">
+    لا تريد الحزمة الآن؟ <a href="kits.html" id="skipLink">تصفح الحقائب الفردية (سعر ترحيبك $6.40 ساري 72 ساعة) ←</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  const q = new URLSearchParams(location.search);
+  const name = q.get('n');
+  if (name) document.getElementById('name').textContent = 'أهلاً ' + name;
+
+  const signupTs = parseInt(q.get('t') || '0', 10);
+  const nowTs = Math.floor(Date.now() / 1000);
+  const startTs = signupTs > 0 && (nowTs - signupTs) < 3600 ? signupTs : nowTs;
+  const DURATION = 15 * 60;
+  const skipLink = document.getElementById('skipLink');
+  if (skipLink) skipLink.href = 'kits.html?t=' + startTs;
+  const buyBtn = document.getElementById('buyBtn');
+  buyBtn.href = buyBtn.href + '/' + 'FOCUS20';
+
+  const timerEl = document.getElementById('timer');
+  const hero = document.getElementById('hero');
+
+  function fmt(s) {
+    const m = Math.floor(s / 60), sec = s % 60;
+    return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+  }
+  function tick() {
+    const remaining = DURATION - (Math.floor(Date.now() / 1000) - startTs);
+    if (remaining <= 0) {
+      timerEl.textContent = '00:00';
+      hero.classList.add('expired');
+      hero.classList.remove('pulse');
+      document.getElementById('ribbon').innerHTML = 'انتهى العرض — السعر الآن $48';
+      buyBtn.textContent = 'انتهى العرض';
+      return;
+    }
+    timerEl.textContent = fmt(remaining);
+    setTimeout(tick, 1000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
