@@ -64,7 +64,7 @@ h1 b{color:var(--coral);}
 </head>
 <body>
 <div class="offerbar" id="bar">
-  <span>🌟 عرض ترحيبك ساري</span>
+  <span>🌟 عرض ترحيبي ساري</span>
   <b>FOCUS20 · $6.40 بدل $8</b>
   <span>ينتهي بعد</span>
   <span class="timer" id="barTimer">--:--:--</span>
@@ -180,7 +180,7 @@ h1 b{color:var(--coral);}
     if (remaining <= 0) {
       barTimer.textContent = '00:00:00';
       bar.classList.add('expired');
-      bar.querySelector('b').textContent = 'انتهى عرض ترحيبك — السعر عاد $8';
+      bar.querySelector('b').textContent = 'انتهى عرض ترحيبي — السعر عاد $8';
       cards.forEach(c => c.classList.add('expired'));
       singleBtns.forEach(b => { b.href = b.href.replace('/FOCUS20', ''); b.textContent = 'اطلبها بـ$8'; });
       return;
