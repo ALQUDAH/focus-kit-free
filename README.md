@@ -4,4 +4,4 @@
 
 التحميل: [free-mini-ar.pdf](./free-mini-ar.pdf)
 
-الحقائب الكاملة المخصصة باسم طفلك: https://iabdqudah.gumroad.com
+الحقائب الكاملة المخصصة باسم طفلك: https://qclabz.gumroad.com
